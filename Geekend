@@ -1,0 +1,485 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+using namespace std;
+void Funcion();
+void arreglos();
+void Matrices();
+
+
+
+
+
+void PracticaFuncion();
+void PracticaMatriz();
+
+void main()
+{
+	int opcion, i, opcion2, opcion3, opcion4;
+	string nombre;
+	string pass;
+	string usuario;
+	string contraseña;
+
+	cout << " ______________________________________________________________________________________                               " << endl;
+	cout << "|   _______    _______   _______   __    ___  _______   ___      __   ___ _ _          |                            " << endl;
+	cout << "|  |  _____|  |  _____| |  _____| |  |  /  / |   ____| |   -    |  | |     _ _         |                        " << endl;
+	cout << "|  | |        |  |      |  |      |  | /  /  |  |      |    -   |  | | |     _ _       |                    " << endl;
+	cout << "|  | | _____  |  |__    |  |__    |   /  /   |  |__    |     -  |  | | |       _ _     |                     " << endl;
+	cout << "|  | | |__ |  |   __|   |   __|   |     /    |   __|   |  |-  - |  | | |       _ _     |                    " << endl;
+	cout << "|  | |   | |  |  |      |  |      |  |- -    |  |      |  |  - -|  | | |      _ _      |                  " << endl;
+	cout << "|  | |___| |  |  |____  |  |____  |  | - -   |  |____  |  |  -     | | |__  _ _        |                 " << endl;
+	cout << "|  |_______|  |_______| |_______| |__| |__|  |_______| |__|   -____| |___ _ _          |             " << endl;
+	cout << "|                                                                                      |" << endl;
+	cout << "|                                                                                      |" << endl;
+	cout << "|                               <<<<<BIENVENIDOS A GEEKEND>>>>>                        |" << endl;
+	cout << "|                         <<<<<TU PLATAFORMA PARA APRENDER PROGRAMAR>>>>>              |" << endl;
+	cout << "|                                                                                      |" << endl;
+
+
+
+	do {										//LOGIN//
+		cout << "|______________________________________________________________________________________|" << endl;
+		cout << "|                               -----Login------				       |" << endl;
+		cout << "|                               1. Crear usuario				       |" << endl;
+		cout << "|                               2. Preguntas					       |" << endl;
+		cout << "|                               3. Ingresar					       |" << endl;
+		cout << "|                               Digite una opcion:				       |" << endl;
+		cout << "|______________________________________________________________________________________|" << endl;
+		cin >> opcion;
+		system("cls");
+
+		switch (opcion)
+		{
+		case 1: {cout << "Por favor ingrese su nombre de usuario" << endl;
+			cin >> usuario;
+			cout << "Porfavor ingrese su contraseña" << endl;
+			cin >> contraseña;
+			cout << "Ingrese 3 seguidamente para poder ingresar" << endl;
+			system("pause>null");
+			break; }
+		case 2: {cout << "proximamente" << endl;
+			cin >> contraseña;
+			break;
+		}
+
+				system("cls");
+		}
+	} while (opcion != 3);
+
+	//REGISTRO DEL LOGIN//
+	for (i = 1; i < 4; i++)
+	{
+		system("cls");
+		cout << endl;
+		cout << "        BIENVENIDO AL SISTEMA DE LOGIN    " << endl;
+		cout << "___________________________________________" << endl;
+		cout << endl;
+		cout << "Por favor ingrese su informacion de usuario" << endl;
+		cout << endl;
+		cout << "¿Nombre de usuario?" << endl;
+		cin >> nombre;
+		if (nombre == usuario) {
+			cout << "Nombre de usuario correcto, por favor ingrese su contrasena:" << endl;
+			cin >> pass;
+			if (pass == contraseña) {
+				cout << endl;
+				cout << "Contrasena correcta, bienvenido, sera redirigido a la aplicacion" << endl;
+				system("pause>null");
+				break;
+
+			}
+			else
+				if (pass != contraseña) {
+					cout << "Contrasena incorrecta, por favor ingrese un usuario y contrasena valida" << endl;
+					system("pause>null");
+				}
+		}
+		else
+			if (nombre != usuario) {
+				cout << "Nombre de usuario incorrecto, por favor ingrese su nombre de usuario nuevamente" << endl;
+				system("pause>null");
+			}
+
+		if (i > 0) {
+			cout << endl;
+			cout << "Ha realizado " << i << "/3 intentos" << endl;
+			cout << endl;
+			system("pause>null");
+		}
+		if (i == 3) {
+			cout << endl;
+			cout << "Ha realizado 3 intentos, por seguridad el programa se cerrara..." << endl;
+			system("pause>null");
+			exit(0);
+		}
+	}
+	system("cls");
+
+	do {							//Comienzo del programa Menu//
+		cout << "                     <<<<<<MENU>>>>>            " << endl;
+		cout << "1. Cursos" << endl;
+		cout << "2. Practicas" << endl;
+		cout << "3. Ejercicios " << endl;
+		cout << "4. Videos" << endl;
+		cout << "5. Soporte " << endl;
+		cout << "6. Ajustes" << endl;
+		cout << "0.Salir" << endl;
+		cout << "Ingrese una opcion" << endl;
+		cin >> opcion2;
+		system("cls");
+		switch (opcion2)
+		{
+		case 1:				//CURSOS DE C++//
+		{
+			do {
+				cout << "                Bienvenidos al apartado de cursos en C++            " << endl;
+				cout << "Temas: " << endl;
+				cout << " 1. Introduccion a la programacion" << endl;
+				cout << " 2. Introduccion a C++" << endl;
+				cout << " 3. Variables " << endl;
+				cout << " 4. Operadores" << endl;
+				cout << " 5. Bucles(Secuenciales y Condicionales) " << endl;
+				cout << " 6. Funciones " << endl;
+				cout << " 7. Arreglos " << endl;
+				cout << " 8. Clase String " << endl;
+				cout << " 9. Matrices " << endl;
+				cout << " 0. Salir" << endl;
+
+				cout << "Proximamente el curso completo ._." << endl;
+				cout << "Ingrese una opcion: " << endl;
+
+				cin >> opcion3;
+				system("cls");
+				switch (opcion3)
+				{
+				case 1:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 2:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 3:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 4:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 5:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 6:
+				{Funcion();
+				break; }
+				case 7:
+				{arreglos();
+				break; }
+				case 8:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 9:
+				{Matrices();
+				break; }
+
+				}
+			} while (opcion3 != 0);
+
+
+
+
+
+			break;
+		}
+		case 2:           //PRACTICA C++//
+			do {
+				cout << "                Bienvenidos al apartado de practicas en C++            " << endl;
+				cout << "Temas: " << endl;
+				cout << " 1. Introduccion a la programacion" << endl;
+				cout << " 2. Introduccion a C++" << endl;
+				cout << " 3. Variables " << endl;
+				cout << " 4. Operadores" << endl;
+				cout << " 5. Bucles(Secuenciales y Condicionales) " << endl;
+				cout << " 6. Funciones " << endl;
+				cout << " 7. Arreglos " << endl;
+				cout << " 8. Clase String " << endl;
+				cout << " 9. Matrices " << endl;
+				cout << " 0. Salir" << endl;
+
+				cout << "Proximamente el curso completo ._." << endl;
+				cout << "Ingrese una opcion: " << endl;
+
+				cin >> opcion4;
+				system("cls");
+				switch (opcion4)
+				{
+				case 1:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 2:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 3:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 4:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 5:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 6:
+				{PracticaFuncion();
+				break; }
+				case 7:
+				{cout<<"s";
+				break; }
+				case 8:
+				{cout << "Proximamente" << endl;
+				break; }
+				case 9:
+				{PracticaMatriz();
+				break; }
+
+				}
+			} while (opcion4 != 0);
+
+
+
+
+
+			break;
+		}
+
+	}
+
+	 while (opcion2 != 0);
+
+
+
+
+	_getwch();
+}
+
+
+
+void arreglos()
+{
+	cout << "Un arreglo es utilizado para almacenar informacion; en vez de declarar multiples variables y almacenar datos individuales se puede declarar un solo arreglo para almacenar todas las variables." << endl;
+	cout << "Cuando declares un arreglo especifica el tipo, asi como tambien la cantidad de elementos que tendra." << endl;
+	cout << "Ejemplo: " << endl;
+	cout << "     int a[5];    " << endl;
+	cout << "Esto significa que la variable a fue declarada como un arreglo de 5 valores enteros." << endl;
+	cout << "La posicion de los elementos de un arreglo inician desde 0, el segundo elemento se mostrara en la posicion 1 y asi sucesivamente." << endl;
+	cout << "Ejemplo: " << endl;
+	cout << "       int b[5] = {11,45,62,70,88}" << endl;
+	cout << "       b[0]=11     b[1]=45     b[2]=62     b[3]=70     b[4]=88" << endl;
+	cout << "1) Cargar elementos en un vector." << endl;
+	cout << "Para poder introducir elementos en un arreglo se utiliza el bucle for. Para poder introducir los elementos se debe primeramente introducir cuantos valores ingresaremos en el arreglo." << endl;
+	cout << "Ejemplo: " << endl;
+	cout << "       int arreglo[5];" << endl;
+	cout << "       for(int i=0;i<5;i++)" << endl;
+	cout << "           cin>> arreglo[i];" << endl;
+	cout << "En el for la variable i se inicializa en 0 ya que la primer posicion de un arreglo es 0 y se pone de restriccion menor a 5, ya que como inicia en 0 el quinto valor estar en la posicion con el numero 4." << endl;
+	cout << "2) Mostrar un Arreglo." << endl;
+	cout << "Para mostrar un arreglo se utiliza un for similar al que usamos para cargar elementos en un arreglo." << endl;
+	cout << "Ejemplo: " << endl;
+	cout << "       int c[5];" << endl;
+	cout << "Asumimos que el arreglo ya ha sido cargado." << endl;
+	cout << "       for(int i=0;i<5;i++)" << endl;
+	cout << "          cout<< c[i]<<endl;" << endl;
+	cout << "3) Buscar elementos en un arreglo." << endl;
+	cout << "Como las distintas operaciones que se realizan con arreglos utilizaremos un for." << endl;
+	cout << "Ejemplo: " << endl;
+	cout << "       int d[5];" << endl;
+	cout << "Asumiendo que el arreglo esta cargado y tenemos declarada una variable que almacena el numero que deseamos buscar." << endl;
+	cout << "       int n=3" << endl;
+	cout << "Procedemos a hacer la siguiente operacion." << endl;
+	cout << "       for(int i=0;i<5;i++)" << endl;
+	cout << "           {" << endl;
+	cout << "              if(d[i]==n)" << endl;
+	cout << "                 cout<<El numero esta en la posicion: <<i<<" << endl;
+	cout << "           }" << endl;
+	system("pause>null");
+	system("cls");
+}
+void Funcion()
+{
+	cout << "Bienvenido al curso de funciones en c++" << endl;
+	cout << " En esta clase veremos la gran importancia que tienen las funciones en cualquier tipo de programa" << endl;
+	cout << "Pero que son las funciones?" << endl;
+	cout << "Las funciones son las estructuras mas importantes dentro del lenguaje de programacion. Permiten una programacion estructurada y simplifican la lectura de codigo; pero lo mas importante es que, una funcion sencilla que realiza una tarea bien especifica, puede ser reutilizada con extrema facilidad en cualquier otro programa" << endl;
+	cout << "-------------------------------------------------------------------------------------------------------------------" << endl;
+	system("pause>null");
+	system("cls");
+	cout << "Por ejemplo si necesitamos un programa que necesite multiples tareas de calculo como: determinantes, calculos trigonometricos, hallar perimetro; el programa principal quedaria demasiado cargado y podria presentar un desorden, que cuando se programa es lo menos que se quiere." << endl;
+	cout << "Entonces la solucion son las funciones que se presentan en el siguiente formato." << endl;
+	cout << "Debemos tomarlo como un subprograma." << endl;
+	cout << "-----------------------------------------------------------------" << endl;
+	cout << "Empezamos con un tipo de formato puede ser: int, float, bool, void entre otros; todo depende del contenido de la funcion." << endl;
+	cout << "Ejemplo: quiero llamar a una funcion que calcule una suma.";
+	cout << " int [NOMBRE_DE_LA_FUNCION](int A, int B ) " << endl;
+	cout << " {[CONTENIDO_DE_LA_FUNCION]} " << endl;
+	cout << "Lo que se ve al principio del codigo es el formato, en este caso int; seguido del nombre de la funcion que puede ser cualquiera de tu agrado solo recuerda que no debes dejar espacios, luego abrimos parentesis e introducimos alguno varible que queramos utilizar por ejemplo: el (int a) puede ser una variable que deseemos sumar con (int b) siempre declaramos el tipo de la variable seguido del nombre, que no necesariamente tiene que ser la misma que tengamos en el programa principal; cerramos parentesis y abrimos corchetes y trabajamos en la suma, como utilizamos int debemos poner al final return 0 o cualquier valor que queramos retomar. " << endl;
+	cout << "Los parametro que tomamos del programa principal no tienen que ser del mismo nombre, es importante utilizar el nombre que pusimos en la funcion en el codigo." << endl;
+	cout << "Ejemplo:" << endl;
+	cout << "{int a=5; " << endl;
+	cout << "int b=6;" << endl;
+	cout << "cout<<Suma(a,b);" << endl;
+	cout << "getch();}" << endl;
+	cout << "-----------------------------------" << endl;
+	cout << "//Abajo del programa escribimos el codigo del subprograma." << endl;
+	cout << "int Suma( int A, int B)" << endl;
+	cout << "{ int suma;" << endl;
+	cout << "suma=A+B;" << endl;
+	cout << "return suma; }" << endl;
+	cout << "Como se ve en el programa principal se llama a la funcion sin el int o cualquier formato en general y las variables de parametro son las misma del programa principal terminando con un ';'. " << endl;
+	cout << "En el subprograma se lo declara con el formato y las variables con su tipo de dato como se observa." << endl;
+	cout << "El codigo de la funcion se lo hace con la variables que agregamos en la funcion mismo, en retrospectiva podriamos colocar cualquier nombre. Lo que realiza la funcion es que toma el parametro basado en la posicion en que se declara." << endl;
+	cout << "Por ultimo luego de hacer el calculo, como estamos trabajando con int agregamos return suma ya que queremos que cuando llamemos a la funcion devuelva la suma directamente; si no lo pusieramos haria el calculo pero no lo mostraria, por eso al llamar a la funcion en el programa principal colocamos 'cout'." << endl;
+	system("pause>null");
+	system("cls");
+	cout << "Algo muy importante que debemos saber sobre la funciones son los parametros directos." << endl;
+	cout << "Cuando antes declaravamos 'int Suma(int A, int B)." << endl;
+	cout << "Ahora podemos declarar el resultado y anclarlo directamente al programa principal; de esta manera. " << endl;
+	cout << "int Suma(int A, int B, int &Suma)" << endl;
+	cout << "La variable con '&' guardara el valor directamente con la variable que este en la posicion en el programa principal." << endl;
+	cout << "Si en el programa principal llamamos a la funcion de esta manera." << endl;
+	cout << "Suma (a, b, &suma) " << endl;
+	cout << "Entonces suma en el programa principal guardara el valor que le demos en la funcion" << endl;
+	cout << "Con esto concluimos la teoria de Funciones." << endl;
+	cout << "Puedes practicar con ejercicios en practicas y analizar ejercicios en el apartado de ejercicios" << endl;
+	cout << "Gracias!!!" << endl;
+	system("pause>null");
+	system("cls");
+}
+
+void Matrices()
+{
+	cout << "Bienvenidos al curso de matrices en c++" << endl;
+	cout << "En esta clase analizaremos que son y como se usan las matrices en ++." << endl;
+	cout << "Si ya vieron Arreglos entonces no tendran muchos problemas ya que sige la misma logica. Bueno, comencemos. " << endl;
+	cout << "Primero, dejemos claro qué es una matriz. En términos generales, una matriz es una estructura conformada por filas y columnas, idealmente más de dos filas y columnas, de hecho, podemos decir que si una 'matriz' tiene una única fila o una única columna, entonces estamos hablando de un vector y no una matriz como tal." << endl;
+	cout << "La intersección de una fila y una columna de la matriz son las casillas y cada una de ellas podrá poseer información, simple o compleja (ya dependera de nuestras necesidades)." << endl;
+	cout << "Como se crea una Matriz en C++?" << endl;
+	cout << "Declarar una matriz en C++ es muy similar a la de un vector, se deben seguir las mismas normas para declarar una variable pero una vez más con un pequeño cambio en la sintaxis. Primero necesitaremos saber el tipo de los datos que irán al interior de este (números, decimales o cadenas de texto, etc.) necesitamos también, como siempre, un nombre para la matriz y un tamaño máximo tanto para las filas como para las columnas. La sintaxis para declarar una matriz en C++ es la siguiente:" << endl;
+	cout << "tipoDato nombreMatriz[filas][columnas];" << endl;
+	cout << "Tenemos entonces, como podrás ver, que la sintaxis es casi la misma excepto que hemos añadido un par de corchetes '[]' más esta vez y al interior de éstos debemos poner el número de filas y columnas máximas de la matriz, respectivamente. Veamos un ejemplo en el cual pondré la declaración de varias matrices de diferentes tipos y tamaños en C++." << endl;
+	cout << "Declaración de una matriz en C++:" << endl;
+	cout << "int Matriz1[10][5];" << endl;
+	cout << "float Matriz2[5][10];" << endl;
+	cout << "string Matriz3[15][15];" << endl;
+	cout << "bool Matriz4[1000][3];" << endl;
+	cout << "¿Cómo inicializar una matriz en C++?" << endl;
+	cout << "En cuanto tenemos declarado una matriz, es posible asignarle valores a cada una de sus casillas, evidentemente estos valores deben coincidir con el tipo de dato que le asignamos a dicha matriz" << endl;
+	cout << "int Matriz1[2][2] = {{1,2},{3,4}};" << endl;
+	cout << "Para realizar ejercicios con matrices mas generales necesitamos crear funciones que carguen nuestra matriz a gusto y darle un tamaño" << endl;
+	cout << "Ven a la seccion de practicas de matrices para ver todas las posibilidades y practica en el apartado de practicas" << endl;
+	cout << "Gracias!" << endl;
+	system("pause>null");
+	system("cls");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void PracticaFuncion()
+{
+	cout << "Bienvenido al apartado de practicas de funciones en C++" << endl;
+	cout << "Para que puedas realizar tus codigos en conjuntos a la clase te dejamos un link de un compilador" << endl;
+	cout << "https://www.onlinegdb.com/online_c++_compiler   Ingresa y comencemos!" << endl;
+	cout << "---------------------------------------------------------------------" << endl;
+	cout << "Para comenzar te dejo esto para ir mas rapido y puedos correr el subprograma" << endl;
+	cout << "#include <iostream> #include <math.h>  using namespace std;  void main(){ [FUNCION]  getch();  }//Dale sus respesctivos espacios y comenzamos//" << endl;
+
+	system("pause>null");
+	system("cls");
+
+	cout << "Haremos una funcion para calcular un numero('x') elevado a otro('y') " << endl;
+	cout << "Entonces comezamos con: int Potencia(int x, int y)" << endl;
+	cout << "{int pot;" << endl;
+	cout << "pot=pow(x,y);" << endl;
+	cout << "return pot;}" << endl;
+	cout << "Ahora en el programa principal llama a la funcion con los parametros del mismo" << endl;
+	cout << "Prueba realizar multiples calculos con este formato" << endl;
+	cout << "---------------------------------------------------------------------------------------" << endl;
+
+	system("pause>null");
+	system("cls");
+
+	cout << "Ahora realicemos uno con parametro directo" << endl;
+	cout << "El parametro directo nos sirve mucho ya que normalmente una funcion solo puede devolver un valor pero si utilizamos los parametros directos podemos obtener cualquier cantidad de salidas" << endl;
+	cout << "Para probrarlo realizaremos un sub programa que tomando los valores 'x' e 'y' calculemos la division entre ellos y el calculo de elevar 'x' a 'y'" << endl;
+	cout << "float DP(int x, int y, float &div, float &pot)" << endl;
+	cout << "{ div=x/y;" << endl;
+	cout << "pot=pow(x,y)}" << endl;
+	cout << "Pruba en tu programa principal al mostrar con cout los valores de esas variables y comprueba el resultado" << endl;
+
+	system("pause>null");
+	system("cls");
+
+
+}
+
+void PracticaMatriz()
+{
+	cout << "Bienvenidos al apartado de practicas de funciones en C++" << endl;
+	cout << "Para que puedas realizar tus codigos en conjuntos a la clase te dejamos un link de un compilador" << endl;
+	cout << "https://www.onlinegdb.com/online_c++_compiler   Ingresa y comencemos!" << endl;
+	cout << "-----------------------------------------------------------------------------------------------" << endl;
+
+	system("pause>null");
+	system("cls");
+
+	cout << "Para comenzar podemos practicar como cargar una matriz para poder trabajar cualquier tipo programa. " << endl;
+	cout << "Primero declaramos las matrices con constantes como tamaño y las cargamos de la siguiente manera." << endl;
+	cout << "#include <iostream>" << endl;
+	cout << "#define FILA 20   //constantes para el tamaño de las matrices" << endl;
+	cout << "#define COLUM 20" << endl;
+	cout << "                                                " << endl;
+	cout << "using namespace std; " << endl;
+	cout << "void main()" << endl;
+	cout << "{int Matriz[FILA][COLUM];" << endl;
+	cout << "int n, m;" << endl;
+	cout << "cout<<'Ingrese tamaño de la matriz( fila y columna)';" << endl;
+	cout << "cin>>n>>m; " << endl;
+	cout << "for(int i=0;i<n;i++)" << endl;
+	cout << " {for(int j=0;j<m;j++)" << endl;
+	cout << "   {cin>>Matriz[i][j];}" << endl;
+	cout << " }" << endl;
+	cout << "//Ahora mostraremos los valores con esta codigo que sigue la misma logica//" << endl;
+	cout << "for(int k=0;k<n;k++)" << endl;
+	cout << " {for(int l=0;l<m;l++)" << endl;
+	cout << "   {cout<<Matriz[i][j];}" << endl;
+	cout << " }" << endl;
+	cout << "getch();" << endl;
+	cout << "}" << endl;
+	cout << "-------------------------------------------------------------------------------------------" << endl;
+	cout << "Lo que hacemos es que cuando utilizamos dos 'for' con dos variables diferentes podemos recorrer la matriz de forma ordenada para cargarla o mostrarla." << endl;
+	cout << "De modo que la primera variable se situa con la 'i'en la fila'0' y el parametro 'j' para recorriendo esa fila. Todo esto tomando en cuanta el tamaño de las filas y columnas de la matriz y usandolas en los 'fors' para saber cuantas veces debemos recorrer la fila o la columna " << endl;
+	cout << "Podemos darle muchas utilidades a una matriz como: listas de multiples datos, registros contables entre otros" << endl;
+	cout << "Puedes ver ejercicios para mejorar mas en la seccion de ejercicios de curso" << endl;
+	cout << "Gracias por practicar con nosotros" << endl;
+
+	system("pause>null");
+	system("cls");
+
+}
