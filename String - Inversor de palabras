@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+#define MAX 100
+using namespace std;
+
+void Inversor(string Palabra);
+
+void main()
+{
+	int resp;
+	string palabra;
+
+	cout << "Ingrese palabra: ";
+	getline(cin, palabra);
+
+	Inversor(palabra);
+	
+	
+	_getwch();
+}
+
+
+void Inversor(string Palabra)
+{
+	string N[MAX];
+	int tamaño = Palabra.length(),parametro=tamaño,i;
+	
+	for (i = 0; i < tamaño; i++)
+	{
+		N[i] = Palabra[tamaño-1-i];
+		parametro = parametro - 1;
+	}
+		
+	for(int j=0;j<tamaño;j++)
+			cout << N[j];
+}
