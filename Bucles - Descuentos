@@ -1,0 +1,120 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main() {
+	float cantidad, precio1, precio2, precio3, precio4, precio5, precio6;
+	cout<<"Programa de descuentos"<<endl<<endl;
+	cout<<"Cuantos productos va comprar?"<<endl;
+	cin>>cantidad;
+
+	if (cantidad <=6) {
+		if (cantidad == 1){
+			cout<<"Precio del primer producto: ";
+			cin>>precio1;
+			precio1 = precio1 - (precio1*0.30);
+			cout<<"El descuento es: "<<precio1;
+			cout<<"El precio final es: "<<precio1;
+		}
+		if (cantidad == 2){
+			cout<<"Precio del primer producto: ";
+			cin>>precio1;
+			precio1 = precio1 - (precio1*0.30);
+			cout<<"El descuento es: "<<precio1<<endl;
+			cout<<"Precio del segundo producto: ";
+			cin>>precio2;
+			precio2 = precio2 - (precio2*0.20);
+			cout<<"El descuento es: "<<precio2<<endl;
+			cout<<"El precio final es: "<<precio1+precio2;
+		}
+		if (cantidad == 3){
+			cout<<"Precio del primer producto: ";
+			cin>>precio1;
+			precio1 = precio1 - (precio1*0.30);
+			cout<<"El descuento es: "<<precio1<<endl;
+			cout<<"Precio del segundo producto: ";
+			cin>>precio2;
+			precio2 = precio2 - (precio2*0.20);
+			cout<<"El descuento es: "<<precio2<<endl;
+			cout<<"Precio del tercer producto: ";
+			cin>>precio3;
+			precio3 = precio3 - (precio3*0.10);
+			cout<<"El descuento es: "<<precio3<<endl;
+			cout<<"El precio Final es: "<<precio1+precio2+precio3;
+		}
+		if (cantidad == 4){
+			cout<<"Precio del primer producto: ";
+			cin>>precio1;
+			precio1 = precio1 - (precio1*0.30);
+			cout<<"El descuento es: "<<precio1<<endl;
+			cout<<"Precio del segundo producto: ";
+			cin>>precio2;
+			precio2 = precio2 - (precio2*0.20);
+			cout<<"El descuento es: "<<precio2<<endl;
+			cout<<"Precio del tercer producto: ";
+			cin>>precio3;
+			precio3 = precio3 - (precio3*0.10);
+			cout<<"El descuento es: "<<precio3<<endl;
+			cout<<"Precio del cuarto producto: ";
+			cin>>precio4;
+			precio4 = precio4 - (precio4*0.20);
+			cout<<"El descuento es: "<<precio4<<endl;
+			cout<<"El precio Final es: "<<precio1+precio2+precio3+precio4;
+		}
+		if (cantidad == 5){
+			cout<<"Precio del primer producto: ";
+			cin>>precio1;
+			precio1 = precio1 - (precio1*0.30);
+			cout<<"El descuento es: "<<precio1<<endl;
+			cout<<"Precio del segundo producto: ";
+			cin>>precio2;
+			precio2 = precio2 - (precio2*0.20);
+			cout<<"El descuento es: "<<precio2<<endl;
+			cout<<"Precio del tercer producto: ";
+			cin>>precio3;
+			precio3 = precio3 - (precio3*0.10);
+			cout<<"El descuento es: "<<precio3<<endl;
+			cout<<"Precio del cuarto producto: ";
+			cin>>precio4;
+			precio4 = precio4 - (precio4*0.20);
+			cout<<"El descuento es: "<<precio4<<endl;
+			cout<<"Precio del quinto producto: ";
+			cin>>precio5;
+			precio5 = precio5 - (precio5*0.20);
+			cout<<"El descuento es: "<<precio5<<endl;
+			cout<<"El precio Final es: "<<precio1+precio2+precio3+precio4+precio5;
+		}
+		if (cantidad == 6){
+			cout<<"Precio del primer producto: ";
+			cin>>precio1;
+			precio1 = precio1 - (precio1*0.30);
+			cout<<"El descuento es: "<<precio1<<endl;
+			cout<<"Precio del segundo producto: ";
+			cin>>precio2;
+			precio2 = precio2 - (precio2*0.20);
+			cout<<"El descuento es: "<<precio2<<endl;
+			cout<<"Precio del tercer producto: ";
+			cin>>precio3;
+			precio3 = precio3 - (precio3*0.10);
+			cout<<"El descuento es: "<<precio3<<endl;
+			cout<<"Precio del cuarto producto: ";
+			cin>>precio4;
+			precio4 = precio4 - (precio4*0.20);
+			cout<<"El descuento es: "<<precio4<<endl;
+			cout<<"Precio del quinto producto: ";
+			cin>>precio5;
+			precio5 = precio5 - (precio5*0.20);
+			cout<<"El descuento es: "<<precio5<<endl;
+			cout<<"Precio del sexto producto: ";
+			cin>>precio6;
+			precio6 = precio6 - (precio6*0.20);
+			cout<<"El descuento es: "<<precio6<<endl;
+			cout<<"El precio Final es: "<<precio1+precio2+precio3+precio4+precio5+precio6;
+		}
+	} else {
+		cout<<"No puede comprar mas de 6 productos, lo sentimos."<<endl;
+	}
+getch();
+}
